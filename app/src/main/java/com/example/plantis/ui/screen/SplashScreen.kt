@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.plantis.ui.theme.PlantisTypography
 import kotlinx.coroutines.delay
 
 
@@ -34,6 +35,7 @@ fun SplashScreen(
         //TODO: Implement our logo here
         Text(
             modifier = Modifier.fillMaxWidth(),
+            style = PlantisTypography.titleLarge,
             textAlign = TextAlign.Center,
             text = "PLANTIS"
         )

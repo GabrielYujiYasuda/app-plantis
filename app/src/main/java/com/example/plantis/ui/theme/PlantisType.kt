@@ -17,7 +17,7 @@ val nunitoFontFamily = FontFamily(
     Font(R.font.nunito_semi_bold, FontWeight.SemiBold)
 )
 
-val Typography = Typography(
+val PlantisTypography = Typography(
     headlineLarge = TextStyle(
         fontFamily = if (activatePreview) FontFamily.Default else nunitoFontFamily,
         fontWeight = FontWeight.Bold,

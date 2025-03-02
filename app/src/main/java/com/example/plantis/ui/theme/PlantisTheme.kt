@@ -45,7 +45,7 @@ fun PlantisTheme(
 
     MaterialTheme(
         colorScheme = colors,
-        typography = Typography,
+        typography = PlantisTypography,
         content = content
     )
 }
