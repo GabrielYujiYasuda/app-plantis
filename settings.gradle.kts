@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "plantis"
 include(":app")
- 
+include(":feature")
+include(":core")
