@@ -1,6 +1,5 @@
 package com.example.plantis.ui.screen
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
@@ -14,7 +13,6 @@ fun HomeScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color.Green)
     ) {
         Text(
             color = Color.White,
