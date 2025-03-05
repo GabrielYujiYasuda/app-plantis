@@ -2,11 +2,12 @@ package com.example.plantis.ui.screen.routes
 
 import kotlinx.serialization.Serializable
 
+//Maybe use data object Splash
 @Serializable
-data object Splash
+object Splash
 
 @Serializable
-data object Home
+object Home
 
 @Serializable
-data object Plants
+object Plants
