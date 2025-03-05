@@ -28,8 +28,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.plantis.model.navigationItem.NavigationItem
 import com.example.plantis.ui.screen.HomeScreen
+import com.example.plantis.ui.screen.PlantsScreen
 import com.example.plantis.ui.screen.SplashScreen
 import com.example.plantis.ui.screen.routes.Home
+import com.example.plantis.ui.screen.routes.Plants
 import com.example.plantis.ui.screen.routes.Splash
 import com.example.plantis.ui.theme.PlantisTheme
 
@@ -126,6 +128,10 @@ class MainActivity : ComponentActivity() {
 
                         composable<Home> {
                             HomeScreen()
+                        }
+
+                        composable<Plants> {
+                            PlantsScreen()
                         }
                     }
                 }
