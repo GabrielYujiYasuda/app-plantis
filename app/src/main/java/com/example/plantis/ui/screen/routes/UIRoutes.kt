@@ -1,13 +1,9 @@
 package com.example.plantis.ui.screen.routes
 
-import kotlinx.serialization.Serializable
-
-//Maybe use data object Splash
-@Serializable
-object Splash
-
-@Serializable
-object Home
-
-@Serializable
-object Plants
+sealed class UIRoutes(val route: String) {
+    object Splash : UIRoutes("splash")
+    object Home : UIRoutes("home")
+    object Plants : UIRoutes("plants")
+    object Notifications : UIRoutes("notifications")
+    object Profile : UIRoutes("profile")
+}

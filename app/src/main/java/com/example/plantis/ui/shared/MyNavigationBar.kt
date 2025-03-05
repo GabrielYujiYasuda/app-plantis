@@ -7,6 +7,8 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.vectorResource
 import androidx.navigation.NavHostController
 import com.example.plantis.model.navigationItem.NavigationItem
 
@@ -24,13 +26,12 @@ fun MyNavigationBar(
         )
 
         navItems.forEach { item ->
-            val isSelected = currentRoute?.substringBefore("?") == item.route::class.qualifiedName
-
+            val isSelected = currentRoute?.substringBefore("?") == item.route.route
 
             NavigationBarItem(
                 selected = isSelected,
                 label = { Text(text = item.title) },
-                onClick = { navController.navigate(item.route) {
+                onClick = { navController.navigate(item.route.route) {
                     navController.graph.startDestinationRoute?.let { startRoute ->
                         popUpTo(startRoute) {
                             saveState = true
@@ -47,14 +48,13 @@ fun MyNavigationBar(
                                 Badge {
                                     Text(text = item.badgeCount.toString())
                                 }
-                            }
-                            else  {
+                            } else {
                                 Badge()
                             }
                         }
                     ) {
                         Icon(
-                            imageVector = item.icon,
+                            imageVector = ImageVector.vectorResource(id = item.iconResId),
                             contentDescription = item.title,
                         )
                     }

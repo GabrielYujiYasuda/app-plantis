@@ -30,8 +30,8 @@ class MainActivity : ComponentActivity() {
                     ) },
                 ) { paddingValues ->
                     MyNavGraph(
-                        paddingValues = paddingValues,
                         navController = navController,
+                        paddingValues = paddingValues,
                     )
                 }
             }

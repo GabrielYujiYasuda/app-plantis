@@ -15,7 +15,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.plantis.ui.theme.PlantisTypography
 import kotlinx.coroutines.delay
 
-
 @Composable
 fun SplashScreen(
     modifier: Modifier = Modifier,
