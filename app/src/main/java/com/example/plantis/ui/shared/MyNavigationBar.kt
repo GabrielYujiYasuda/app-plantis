@@ -30,7 +30,6 @@ fun MyNavigationBar(navController: NavHostController) {
             selectedIcon = Icons.Outlined.Home,
             unselectedIcon = Icons.Outlined.Home,
             hasNews = false,
-            route = Home::class
         ),
 
         NavigationItem(
@@ -38,7 +37,6 @@ fun MyNavigationBar(navController: NavHostController) {
             selectedIcon = Icons.Outlined.Info,
             unselectedIcon = Icons.Outlined.Home,
             hasNews = false,
-            route = Plants::class
         ),
 
         NavigationItem(
@@ -47,7 +45,6 @@ fun MyNavigationBar(navController: NavHostController) {
             unselectedIcon = Icons.Outlined.Notifications,
             hasNews = false,
             badgeCount = 9,
-            route = Home::class
         ),
 
         NavigationItem(
@@ -55,7 +52,6 @@ fun MyNavigationBar(navController: NavHostController) {
             selectedIcon = Icons.Outlined.AccountCircle,
             unselectedIcon = Icons.Outlined.AccountCircle,
             hasNews = false,
-            route = Home::class
         )
     )
     //endregion
