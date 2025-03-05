@@ -31,16 +31,18 @@ fun MyNavigationBar(
             NavigationBarItem(
                 selected = isSelected,
                 label = { Text(text = item.title) },
-                onClick = { navController.navigate(item.route.route) {
-                    navController.graph.startDestinationRoute?.let { startRoute ->
-                        popUpTo(startRoute) {
-                            saveState = true
-                        }
+                onClick = {
+                    navController.navigate(item.route.route) {
+                        navController.graph.startDestinationRoute?.let { startRoute ->
+                            popUpTo(startRoute) {
+                                saveState = true
+                            }
 
-                        launchSingleTop = true
-                        restoreState = true
+                            launchSingleTop = true
+                            restoreState = true
+                        }
                     }
-                } },
+                },
                 icon = {
                     BadgedBox(
                         badge = {
