@@ -18,8 +18,6 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.navigation.NavHostController
 import com.example.plantis.model.navigationItem.NavigationItem
-import com.example.plantis.ui.screen.routes.Home
-import com.example.plantis.ui.screen.routes.Plants
 
 @Composable
 fun MyNavigationBar(navController: NavHostController) {
