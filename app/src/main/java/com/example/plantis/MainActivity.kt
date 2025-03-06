@@ -24,10 +24,12 @@ class MainActivity : ComponentActivity() {
 
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    bottomBar = { MyNavigationBar(
-                        navController = navController,
-                        currentRoute = currentRoute,
-                    ) },
+                    bottomBar = {
+                        MyNavigationBar(
+                            navController = navController,
+                            currentRoute = currentRoute,
+                        )
+                    },
                 ) { paddingValues ->
                     MyNavGraph(
                         navController = navController,
