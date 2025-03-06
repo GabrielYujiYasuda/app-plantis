@@ -10,8 +10,8 @@ sealed class NavigationItem(
     @DrawableRes val iconResId: Int,
     val badgeCount: Int? = null,
 ) {
-    object Home : NavigationItem(UIRoutes.Home, "Home", R.drawable.ic_launcher_foreground)
-    object Plants : NavigationItem(UIRoutes.Plants, "Plants", R.drawable.ic_launcher_foreground)
-    object Notifications : NavigationItem(UIRoutes.Notifications, "Notifications", R.drawable.ic_launcher_foreground)
-    object Profile : NavigationItem(UIRoutes.Profile, "Profile", R.drawable.ic_launcher_foreground)
+    object Home : NavigationItem(UIRoutes.Home, "Garden", R.drawable.house)
+    object Plants : NavigationItem(UIRoutes.Plants, "Plants", R.drawable.potted_plant)
+    object Notifications : NavigationItem(UIRoutes.Notifications, "Notifications", R.drawable.bell_simple, 9)
+    object Profile : NavigationItem(UIRoutes.Profile, "Profile", R.drawable.user)
 }
